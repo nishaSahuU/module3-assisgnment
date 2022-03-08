@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.nav li {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.navbar-default .navbar-brand {
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-brand :hover{
+    color: #000;
+}
+.navbar-default .navbar-nav > li > a {
+     color: #000; 
+}
+.nav li a:hover  {
+    color:rgb(75, 71, 71);
+}
+.nav .c1 {
+  border-bottom:0 ;
+}
+
+.nav .c2 {
+    border-bottom:0 ;
+  }
+.box-container .container-1 h1 {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+
+.box-container .box-content .box {
+    padding: 2rem;
+    margin: 3rem;
+    background-color: rgb(189, 190, 194);
+}
+
+.box-container .box-content .box .title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.box-container .box-content .box p {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+
+/*------------- media query ---------------*/
+@media(min-width:1200px ){
+    .navbar-default .navbar-nav > li > a {
+        display: none;
+   }
+   
+    .nav li{
+        display: none;
+    }
+}
+@media (min-width:1025px) and (max-width: 1200px) {
+    .box-content {
+        display: grid;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        display: none;
+   }
+   
+    .nav li{
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+    .box-content {
+        flex-direction: column;
+    }
+    .navbar-default .navbar-nav > li > a {
+        display: none;
+   }
+   
+    .nav li{
+        display: none;
+    }
+    .box-container .box-content .box p {
+        font-size: 1.3rem;
+    }
+
+    .container-1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+    .box-content {
+        flex-direction: column;
+    }
+
+    .box {
+        margin: 3px;
+    }
+}
+
+@media (min-width:320px) and (max-width: 480px) {
+    .box-content {
+        flex-direction: column;
+        padding: 0 0px;
+    }
+
+    .box-container .container-1 h1 {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .box {
+        margin: 3px;
+    }
+}
+
+@media(max-width: 319px) {
+    .box-content {
+        flex-direction: column;
+        padding: 0 0px;
+    }
+}
